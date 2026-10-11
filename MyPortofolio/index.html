@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rizky_Portofolio</title>
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    body {
+        background-color: #69707a;
+        color: white;
+    }
+    aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100vh;
+        z-index: 1000;
+    }
+    .main-content {
+        margin-left: 250px;
+        width: calc(100% - 250px);
+        min-height: 100vh;
+    }
+    .card {
+        color: black;
+    }
+    .nav-link {
+        font-size: 16px;
+    }
+    .profile img {
+        width: 100px;
+        height: 100px;
+    }
+    @media screen and (max-width: 768px) {
+        html, body {
+            height: auto !important;
+            min-height: 100%;
+            overflow-x: hidden !important;
+            overflow-y: auto !important;
+        }
+        body {
+            display: block;
+        }
+        aside {
+            position: relative !important;
+            top: auto !important;
+            left: auto !important;
+            width: 100% !important;
+            height: auto !important;
+            min-height: 0 !important;
+            max-height: none !important;
+            overflow: visible !important;
+        }
+        .main-content {
+            position: relative !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            width: 100% !important;
+            height: auto !important;
+            min-height: 0 !important;
+            padding: 12px !important;
+            overflow: visible !important;
+        }
+        .main-content .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .main-content .row > div {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .profile img {
+            width: 110px;
+            height: 110px;
+        }
+        .nav-link {
+            font-size: 16px;
+            padding: 10px !important;
+        }
+        .card {
+            margin-bottom: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+</style>
+</head>
+<body>
+<aside class="bg-dark text-center text-white p-3 overflow-auto">
+    <div class="profile">
+        <img src="assets/profile1.png"
+             alt="Profile"
+             class="rounded-circle border border-3 border-success object-fit-cover">
+
+        <h1 class="fs-4 mt-3">Rizky Dharma Setia</h1>
+        <p class="text-success">Informatics Student</p>
+    </div>
+    <nav class="nav flex-column gap-1 mt-4">
+        <a href="index.html" class="nav-link bg-info text-white rounded py-2">Home</a>
+        <a href="#about" class="nav-link bg-info text-white rounded py-2">About</a>
+        <a href="#kontak" class="nav-link bg-info text-white rounded py-2">Contact</a>
+        <a href="#skills" class="nav-link bg-info text-white rounded py-2">Skills</a>
+        <a href="#portofolio" class="nav-link bg-info text-white rounded py-2">Portofolio</a>
+    </nav>
+    <div class="d-flex justify-content-center gap-3 mt-5">
+        <a href="https://github.com/kyy-git" class="text-secondary">
+            <i class="fa-brands fa-github fa-xl"></i>
+        </a>
+        <a href="https://www.instagram.com/exablood/" class="text-secondary">
+            <i class="fa-brands fa-instagram fa-xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rizkydharmasetia" class="text-secondary">
+            <i class="fa-brands fa-linkedin-in fa-xl"></i>
+        </a>
+    </div>
+</aside>
+<div class="container-fluid main-content">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="card" id="about">
+                <div class="card-body">
+                    <h2>About Me</h2>
+                    <p style="color: grey; font-size: medium;">
+                        Web developer yang fokus pada pembuatan tampilan web bersih,
+                        responsif, dan mudah. Dengan menggunakan HTML dan Bootstrap
+                    </p>
+                </div>
+            </div>
+            <div class="card mt-2" id="kontak">
+                <div class="card-body">
+                    <h5 class="card-title">Kontak</h5>
+                    <ul class="list-unstyled">
+                        <li>📧 rizkydharmasetia@gmail.com</li>
+                        <li>📱 085694747336</li>
+                        <li>🌐 github.com/kyy-git</li>
+                        <li>📍 Tangerang Selatan, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mt-2" id="skills">
+                <div class="card-body">
+                    <h5 class="card-title">Skills</h5>
+                    <span class="badge bg-primary">HTML5</span>
+                    <span class="badge bg-primary">CSS3</span>
+                    <span class="badge bg-primary">Bootstrap 5</span>
+                    <span class="badge bg-secondary">GitHub</span>
+                </div>
+            </div>
+            <div class="card mt-2" id="portofolio">
+                <div class="card-body">
+                    <h5>Portofolio</h5>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="assets/project2.jpeg" class="img-fluid" alt="SoundBox">
+                            <p>SoundBox</p>
+                        </div>
+
+                        <div class="col-6">
+                            <img src="assets/project4.jpeg" class="img-fluid" alt="Tetris Game">
+                            <p>Tetris Game</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Pengalaman</h5>
+                    <h6>Menerapkan HTML + CSS dan menggunakan Bootstrap</h6>
+                    <span class="text-muted">Oktober 2026 - Sekarang</span>
+                    <p style="margin-top: 6px; font-size: 0.95rem">
+                        Mengembangkan HTML/CSS, dan mengoptimalkan performa halaman mobile.
+                    </p>
+                    <hr>
+                </div>
+            </div>
+            <div class="card mt-2">
+                <div class="card-body">
+                    <h5 class="card-title">Pendidikan</h5>
+                    <h6>S1 Teknik Informatika &bull; Universitas Paramadina</h6>
+                    <span class="text-muted">2025 - 2028</span>
+                    <p style="margin-top: 6px; font-size: 0.95rem">
+                        Fokus pada pengembangan Web.
+                    </p>
+                </div>
+            </div>
+            <div class="card mt-2">
+                <div class="card-body">
+                    <h5 class="card-title">Proyek Pilihan</h5>
+                    <h6>Portfolio Website & Landing Page</h6>
+                    <span class="text-muted">HTML &bull; CSS &bull; Bootstrap</span>
+                    <p style="margin-top: 6px; font-size: 0.95rem">
+                        Website responsif yang mendukung dark mode dan kompatibel lintas browser.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
